@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cal{
+    background-color: black;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+.res{
+    width: 100%;
+    padding: 25PX;
+    border: none;
+    text-align: left;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+.keys{
+    display:grid;
+    grid-template-columns: repeat(4  ,1fr);
+    gap:10px ;
+    padding: 25px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color:hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+        background-color: hsl(0, 0%, 50%);
+}
+body::after{ 
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: aqua;
+    clip-path: circle(2% AT LEFT);
+}
+#opbtn{
+    background-color: hsl(189, 100%, 50%);
+}
+#opbtn:hover{
+    background-color: hsl(39, 100%, 65%);
+}
+#opbtn:active{
+    background-color: hsl(39, 100%, 75%);
+}
+
